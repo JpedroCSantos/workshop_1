@@ -26,4 +26,4 @@ def read_data(path: str) -> List[pd.DataFrame]:
 
 if __name__ == "__main__":
     data_frame_list = read_data(path="data/input")
-    print(data_frame_list);
+    print(data_frame_list)
