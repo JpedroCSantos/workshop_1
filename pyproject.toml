@@ -1,13 +1,14 @@
 [tool.poetry]
-name = "Projeto ETL"
+name = "etl-project"
 version = "0.1.0"
-description = "Meu projeto de ETL"
+description = "\"Meu primeiro projeto de ETL\""
 authors = ["Joao Pedro Santos <jpedro.csantos@hotmail.com>"]
-license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "3.11.3"
+pandas = "^2.2.1"
+openpyxl = "^3.1.2"
 
 
 [build-system]
