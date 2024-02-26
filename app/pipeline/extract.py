@@ -9,7 +9,7 @@ from typing import List
 function para ler arquivos .csv"" de uma pasta data/input 
 e retornar uma lista de dataframes
 
-args: path (srt): caSminho da pasta com os arquivos
+args: path (srt): caminho da pasta com os arquivos
 
 return: lista de dataframe
 """
