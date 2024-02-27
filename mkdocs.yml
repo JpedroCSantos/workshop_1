@@ -1,0 +1,18 @@
+site_name: ETL Workshop
+theme:
+  name: material
+  pallete: 
+    primary: blue
+  lenguage: pt
+
+repo_name: "JpedroCSantos/workshop_1"
+repo_url: "https://github.com/JpedroCSantos/workshop_1"
+
+nav:
+  - Home: index.md
+  - API: api.md
+  
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python

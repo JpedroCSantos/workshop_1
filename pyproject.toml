@@ -14,6 +14,11 @@ isort = "^5.13.2"
 blue = "^0.9.1"
 pip-audit = "^2.7.1"
 taskipy = "^1.12.2"
+mkdocs = "^1.5.3"
+mkdocstrings-python = "^1.8.0"
+pygments = "^2.17.2"
+mkdocs-material = "^9.5.11"
+pymdown-extensions = "^10.7"
 
 
 [build-system]
@@ -27,3 +32,4 @@ profile = "black"
 format = "isort . && blue ."
 test = "poetry run pytest -v"
 run = "python app/main.py"
+kill = 'powershell.exe -Command "$port = 8000; $processes = Get-NetTCPConnection | Where-Object { $_.LocalPort -eq $port } | Select-Object -ExpandProperty OwningProcess; if ($processes) { try { Stop-Process -Id $processes -Force -ErrorAction Stop } catch { Write-Host \"Erro ao encerrar o processo: $_\" } } else { Write-Host \"Nenhum processo está utilizando a porta $port.\"}"'
