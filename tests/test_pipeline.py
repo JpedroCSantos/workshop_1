@@ -9,10 +9,11 @@ def test_extract_data():
     Desenvolver testes
     """
 
+
 def test_concatenate_dataframe_list():
     input = [
-        pd.DataFrame({'col1': [1,2], 'col2': [3,4]}),
-        pd.DataFrame({'col1': [5,6], 'col2': [7,8]})
+        pd.DataFrame({'col1': [1, 2], 'col2': [3, 4]}),
+        pd.DataFrame({'col1': [5, 6], 'col2': [7, 8]}),
     ]
 
     expected_output = pd.concat([input[0], input[1]], ignore_index=True)
